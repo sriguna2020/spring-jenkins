@@ -14,11 +14,11 @@ public class SpringJenkinsApplication {
 
 	@PostConstruct
 	public void init() {
-		System.out.println("***********Application started******");
+		log.info("***********Application started******");
 	}
 
 	public static void main(String[] args) {
-		System.out.println("*********Application executed*****");
+		log.info("***********Application executed******");
 		SpringApplication.run(SpringJenkinsApplication.class, args);
 	}
 
